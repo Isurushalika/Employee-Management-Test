@@ -8,13 +8,19 @@ import { EmployeeDetailsComponent } from './employee-details/employee-details.co
 import { EmployeeListComponent } from './employee-list/employee-list.component';
 import { HttpClientModule } from '@angular/common/http';
 import { UpdateEmployeeComponent } from './update-employee/update-employee.component';
+import { AssignEmployeesComponent } from './assign-employees/assign-employees.component';
+import { AddFamillyMembersComponent } from './add-familly-members/add-familly-members.component';
+import { UpdateFamillyMembersComponent } from './update-familly-members/update-familly-members.component';
 @NgModule({
   declarations: [
     AppComponent,
     CreateEmployeeComponent,
     EmployeeDetailsComponent,
     EmployeeListComponent,
-    UpdateEmployeeComponent
+    UpdateEmployeeComponent,
+    AssignEmployeesComponent,
+    AddFamillyMembersComponent,
+    UpdateFamillyMembersComponent
   ],
   imports: [
     BrowserModule,

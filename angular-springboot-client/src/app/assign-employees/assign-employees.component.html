@@ -1,0 +1,51 @@
+<h3>Assign Employees</h3>
+<div [hidden]="submitted" style="width: 400px;">
+  <form (ngSubmit)="onSubmit()">
+    <div class="form-group">
+      <!--<label for="name">First Name</label>
+      <input type="text" class="form-control" id="firstName" required [(ngModel)]="employee.firstName" name="firstName">-->
+
+      <label for="sel1">Select Department:</label>
+      <select class="form-control" id="department" required [(ngModel)]="department.dept_name" name="department">
+        <option>Engineering</option>
+        <option>Accounting</option>
+        <option>Management</option>
+      </select>
+
+    </div>
+
+    <div class="form-group">
+      <label for="sel1">Select Employees:</label>
+      <select class="form-control" id="employeeOfdepartment" required [(ngModel)]="department.employees" name="employeeOfdepartment">
+        <option>Engineering</option>
+        <option>Accounting</option>
+        <option>Management</option>
+      </select>
+    </div>
+
+    <div class="form-group">
+      <label for="sel1">Select Supervisor:</label>
+      <select class="form-control" id="supervisor" required [(ngModel)]="employee.supervisor" name="supervisor">
+        <option>Engineering</option>
+        <option>Accounting</option>
+        <option>Management</option>
+      </select>
+    </div>
+
+    <div class="form-group">
+      <label for="sel1">Salary Scale:</label>
+      <select class="form-control" id="employeeSalaryScale" required [(ngModel)]="employee.salaryScale" name="employeeSalaryScale">
+        <option>Engineering</option>
+        <option>Accounting</option>
+        <option>Management</option>
+      </select>
+    </div>
+
+    <button type="submit" class="btn btn-success">Submit</button>
+  </form>
+</div>
+
+<div [hidden]="!submitted">
+  <h4>You submitted successfully!</h4>
+  <!-- <button class="btn btn-success" (click)="newEmployee()">Add</button> -->
+</div>
