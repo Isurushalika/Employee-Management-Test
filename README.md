@@ -2,6 +2,7 @@
 Design REST API using spring boot to store, update, delete and retrieve employee data
 
 ***How to set up environment***
+
 	* clone the project
 	* go inside angular-springboot-client folder and open a cmd to that location
 	* type "npm install" and press enter.
